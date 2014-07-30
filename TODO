@@ -1,0 +1,7 @@
+URI
+    如果是文件,则拷贝到SDCard
+
+File
+InputStream 之类的操作,都尽量拷贝到SD卡.
+httpGet
+httpPost

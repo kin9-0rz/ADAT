@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- APP -->
+    <string name="app_name">ADAT</string>
+    <string name="network_monitor">Network Monitor</string>
+    <string name="sms_log">SMS Log</string>
+    <string name="logcat">Logcat</string>
+    <string name="file_dir_monitor">File / Dir Monitor</string>
+    <string name="boot">Start on Boot</string>
+    <string name="tbSwitch_on">ON</string>
+    <string name="tbSwitch_off">OFF</string>
+
+    <!-- Filter -->
+    <string name="filter_name">Filter Name: </string>
+    <string name="filter_tag">by Log Tag: </string>
+    <string name="filter_msg">by Log Message:</string>
+    <string name="filter_pid">by PID: </string>
+    <string name="filter_app">by Application Name: </string>
+    <string name="filter_level">by Log Level: </string>
+    <string name="level">L</string>
+    <string name="pid">Pid</string>
+    <string name="application">Application</string>
+    <string name="tag">Tag</string>
+    <string name="text">Text</string>
+
+    <!-- MENU -->
+    <string name="menu_exit">Exit</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_about">About</string>
+    <string name="menu_clean">Clean</string>
+
+    <!-- filter -->
+    <string name="ptag">Log Tag: </string>
+    <string name="ptagSummary">by Log Tag.Multiple Use ; separated: </string>
+    <string name="papplication">Application</string>
+    <string name="papplicationSummary">By Application Name: </string>
+    <string name="pmessage">Message</string>
+    <string name="pmessageSummary">By Log Message: </string>
+    <string name="plevel">Level</string>
+    <string name="plevelSummary">By Log Level: </string>
+
+    <!-- filter-none -->
+    <string name="pwritealllog">Write all the logs to file: /sdcard/ETS/Logall_logs.log!</string>
+    <string name="pwritefile">Write File</string>
+    <string name="plogNum">Log Num</string>
+    <string name="plogNumSummary">the num of logs print on console.</string>
+    <string name="pfilterName">Filter Name</string>
+    <!-- about -->
+    <string name="about_title">ADAT</string>
+    <string name="author">Author:</string>
+    <string name="sulan">sulan</string>
+    <string name="studio">Studio:</string>
+    <string name="aboutinfo">Logcat is a command-line tool of Android, this program can be used to get the log information. It is not useful for the average user, but for application developers and testers is very necessary. It can record the log anytime, anywhere. With it you will not miss any of the exceptions !</string>
+    <string name="cancel">Cancel</string>
+    <string name="logWriteToFile">the log has been written to “%1$s”！</string>
+    <string name="exit_toast">Press again to exit the program ! Or home key , switch the program to run in the background and continue logging !</string>
+    <string name="input_filter_name">please input the filter name!</string>
+    <string name="filter_exist">the filter: %1$s has exist! please rename it!</string>
+    <string name="addfilter">Add Filter</string>
+    <string name="selceted">selceted</string>
+    <string name="selcet">Select</string>
+    <string name="filter">Filter</string>
+    <string name="edit">Edit</string>
+    <string name="del">Delete</string>
+    <string name="plogRecord">Log Record</string>
+    <string name="copyLog">Copy Log</string>
+    <string name="copy">Copy</string>
+
+</resources>
