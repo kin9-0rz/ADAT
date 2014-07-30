@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8.0dip" >
+
+        <TextView
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/filter_tag" />
+
+        <EditText
+            android:id="@+id/filter_tag"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8.0dip" >
+
+        <TextView
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/filter_msg" />
+
+        <EditText
+            android:id="@+id/filter_msg"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8.0dip" >
+
+        <TextView
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/filter_pid" />
+
+        <EditText
+            android:id="@+id/filter_pid"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8.0dip" >
+
+        <TextView
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/filter_app" />
+
+        <Spinner
+            android:id="@+id/filter_app"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8.0dip" >
+
+        <TextView
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/filter_level" />
+
+        <Spinner
+            android:id="@+id/filter_level"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:key="tag"
+        android:summary="@string/ptagSummary"
+        android:title="@string/ptag" />
+    <EditTextPreference
+        android:key="message"
+        android:summary="@string/pmessageSummary"
+        android:title="@string/pmessage" />
+
+    <ListPreference
+        android:key="application"
+        android:summary="@string/papplicationSummary"
+        android:title="@string/papplication" />
+    <ListPreference
+        android:entries="@array/log_levels_info"
+        android:entryValues="@array/log_levels_info"
+        android:key="levels"
+        android:summary="@string/plevelSummary"
+        android:title="@string/plevel" />
+    <!--
+         <com.ets.logcat.MutiSelectListPreference
+        android:key="application"
+        android:summary="@string/papplicationSummary"
+        android:title="@string/papplication" />
+    -->
+
+</PreferenceScreen>

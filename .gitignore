@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+.gradle
+/local.properties
+/.idea/workspace.xml
+.DS_Store
+/build
+=======
 *.class
 
 # Mobile Tools for Java (J2ME)
@@ -10,3 +17,4 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+>>>>>>> f94a18d508f3c052be97e50f45e4fb3932458c82
