@@ -4,10 +4,8 @@
 
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -24,30 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="adat.gui.logcat.FilterEditActivity" />
 
         <receiver
-            android:name="adat.receiver.BootReceiver"
-            android:enabled="true"
-            android:exported="false">
-            <intent-filter android:priority="2147483647">
+            android:name="adat.receiver.BootReceiver">
+            <intent-filter android:priority="0x7fffffff">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-
-                <category android:name="android.intent.category.HOME" />
-            </intent-filter>
-            <intent-filter android:priority="2147483647">
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED" />
-
-                <data android:scheme="package" />
             </intent-filter>
         </receiver>
 
         <service android:name="adat.service.SMSLogService" />
         <service android:name="adat.service.ConnectionService" />
-        <!--<service android:name="adat.service.LogcatService" />-->
     </application>
 
 </manifest>

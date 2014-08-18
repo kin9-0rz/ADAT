@@ -32,14 +32,6 @@ public class BootReceiver extends BroadcastReceiver {
 					Context.MODE_PRIVATE);
 			if (cfg.getBoolean("isOn", false)) {
 				if (cfg.getBoolean("isBoot", false)) {
-					if (cfg.getBoolean("isFileDirMonitor", false)) {
-						// TODO 文件监控功能待写
-					}
-
-					if (cfg.getBoolean("isLogcat", false)) {
-                        // TODO Logcat 功能待写
-					}
-
 					if (cfg.getBoolean("isNetworkMonitor", false)) {
                         // FIXME 这段功能重复的情况比较多, 可以重构
 						RootTools.killProcess("tcpdump");
