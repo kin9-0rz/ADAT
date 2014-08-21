@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import adat.service.ConnectionService;
 import adat.service.SMSLogService;
 import adat.utils.Common;
 import adat.utils.Exec;
@@ -41,8 +40,6 @@ public class BootReceiver extends BroadcastReceiver {
 									+ Common.getCurrentTime() + ".pcap";
 							Exec.execRootCmd(Common.TCP_DUMP + fileName + "\n");
 
-							intent.setClass(context, ConnectionService.class);
-							context.startService(intent);
 						} else {
                             // TODO 之前的抓包文件目录删除的话,重启之后,不会继续抓包.
 							Log.d("EventReceiver", "没有数据，请初始化目录");

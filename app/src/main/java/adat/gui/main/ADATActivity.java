@@ -15,7 +15,6 @@ import android.widget.ToggleButton;
 import java.io.File;
 
 import adat.R;
-import adat.service.ConnectionService;
 import adat.service.SMSLogService;
 import adat.utils.AssetsUtils;
 import adat.utils.Common;
@@ -256,9 +255,6 @@ public class ADATActivity extends Activity {
             String cmd = Common.TCP_DUMP + fileName + "\n";
             Exec.execRootCmd(cmd);
 
-            Intent intent = new Intent();
-            intent.setClass(getApplicationContext(), ConnectionService.class);
-            startService(intent);
         }
 
         if (configUtils.isSMSLog()) {
@@ -275,8 +271,6 @@ public class ADATActivity extends Activity {
     public void missionStop() {
         if (configUtils.isNetworkMonitor()) {
             RootTools.killProcess("tcpdump");
-            Intent intent = new Intent(getApplicationContext(), ConnectionService.class);
-            stopService(intent);
         }
 
         if (configUtils.isSMSLog()) {
